@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HW:4</title>
+</head>
+
+
+<style>
+    body {
+        background-color: white;
+    }
+
+    div{
+        background-color:white;
+    }
+
+</style>
+
+
+<body>
+    <h1>Celina Maldonado Homework 4</h1>
+    <p id="output"></p>
+
+
+   
+   
+   <script>
+        const message = prompt('Please enter a number between 2 and 10:')        
+        if (message > 10 || message <=1){       /*/ invalid out of range 2-10 /*/
+            const output = document.getElementById("output")
+            document.getElementById("output").style.color = "red";
+            output.innerHTML = '<h2>Your input number is ' + message + '. The valid input number is between 2 and 10. Please reload this page and try again. </h2>'
+        } else{
+            const output = document.getElementById("output")
+            output.innerHTML = '<h2>Your input number is ' + message + '</h2>'
+        }
+        var x, y; /*/ write stars /*/
+        for (x=message; x >= 1; x--) {
+            for (j=1; j<=x; j++){
+                document.write('*');
+            }
+            document.write('<br/>')
+        }
+ 
+    </script>
+
+        
+</body>
+
+</html>
